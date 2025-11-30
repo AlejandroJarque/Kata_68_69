@@ -1,8 +1,8 @@
 <?php
 
-require_once 'Agenda.php';
-require_once 'Contact.php';
-require_once 'Menu.php';
+require_once __DIR__.'/Clases/Agenda.php';
+require_once __DIR__.'/Clases/Contact.php';
+require_once __DIR__.'/Clases/Menu.php';
 
 $my_Agenda = new Agenda();
 $option = 0;
