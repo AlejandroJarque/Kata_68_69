@@ -2,7 +2,7 @@
 
 class CreateValidations {
 
-    private static function validatEmptyField(string $field, string $value): void {
+    private static function validateEmptyField(string $field, string $value): void {
 
         if(trim($value) === '' ) {
 
@@ -37,10 +37,10 @@ class CreateValidations {
 
     public static function validateAllFields(string $name, string $surname, string $num, string $email): void {
 
-        self:: validatEmptyField('name', $name);
-        self:: validatEmptyField('surname', $surname);
-        self:: validatEmptyField('num', $num);
-        self:: validatEmptyField('email', $email);
+        self:: validateEmptyField('name', $name);
+        self:: validateEmptyField('surname', $surname);
+        self:: validateEmptyField('num', $num);
+        self:: validateEmptyField('email', $email);
 
         self:: validateNoSpaces('name', $name);
         self:: validateNoSpaces('surname', $surname);

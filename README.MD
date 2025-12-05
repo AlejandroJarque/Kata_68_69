@@ -1,3 +1,4 @@
+## 68
 ## Description
 In this exercise, I simulated a contact list capable of adding new contacts, searching for them, displaying them, and deleting them.
 
@@ -17,3 +18,23 @@ A Contacts.json file stores and displays the data that users enter into the addr
  - VS Code
  - PHP
  - Json files 
+
+## 69
+## Description
+In this second exercise, I've applied some validations and tests to verify that everything works correctly, using pure PHP for the validation part and Composer for the testing part.
+
+## Clases
+To begin, I created a directory for the validations and used the directory provided by Composer for testing.
+
+In the validations section, I found the CreateValidations class, in which I included different private methods for each use and a final public class that invokes them all at once. This has been very practical for implementing it in addContacts.php. I also created a custom exception for the validations.
+
+In the test interface, I created a CreateValidatedTest class that inherits from Composer's TestCase to perform different tests on each field. I perform different tests on some of them, and although the structure of all of them is the same, I test something different in each one.
+
+## Extra files
+I downloaded Composer to run the tests, and with it, various files that help me manage the project, such as gitignore.
+
+## Tecnologies
+ - VS Code
+ - PHP
+ - Json files 
+ - Composer
