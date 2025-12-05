@@ -51,8 +51,19 @@ class Agenda {
     public function addContact(string $name, string $surname, string $num, string $email)
     {
         $this -> loadContacts();
-        $this -> contacts[] = new Contact($name, $surname, $num, $email);
-        $this -> saveContacts();
+
+        try {
+
+            CreateValidations:: validateAllFields($name, $surname, $num, $email);
+            $this -> contacts[] = new Contact($name, $surname, $num, $email);
+            $this -> saveContacts();
+            echo "¡Contact added!";
+
+        } catch(ValidatedException $exception) {
+
+            echo "Error when adding contact: ".$exception -> getMessage()."\n";
+        }
+
     }
 
     public function showContact(): void
