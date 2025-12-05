@@ -4,10 +4,10 @@ class Contact {
 
     protected string $name;
     protected string $surname;
-    protected int $num;
+    protected string $num;
     protected string $email;
 
-    public function __construct(string $name, string $surname, int $num, string $email)
+    public function __construct(string $name, string $surname, string $num, string $email)
     {
         $this -> name = $name;
         $this -> surname = $surname;
@@ -25,7 +25,7 @@ class Contact {
         return $this -> surname;
     }
 
-    public function getNum(): int
+    public function getNum(): string
     {
         return $this -> num;
     }

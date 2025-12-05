@@ -45,7 +45,7 @@ class Agenda {
         file_put_contents("Contacts.json", json_encode($data, JSON_PRETTY_PRINT));
     }
 
-    public function addContact(string $name, string $surname, int $num, string $email)
+    public function addContact(string $name, string $surname, string $num, string $email)
     {
         $this -> loadContacts();
         $this -> contacts[] = new Contact($name, $surname, $num, $email);
