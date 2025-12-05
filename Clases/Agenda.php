@@ -1,5 +1,8 @@
 <?php
 
+require_once __DIR__.'/../validaciones/ValidacionesCrear.php';
+require_once __DIR__.'/../validaciones/ValidationException.php';
+
 class Agenda {
 
     protected array $contacts;

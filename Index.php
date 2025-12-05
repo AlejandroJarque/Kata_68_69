@@ -4,6 +4,11 @@ require_once __DIR__.'/Clases/Agenda.php';
 require_once __DIR__.'/Clases/Contact.php';
 require_once __DIR__.'/Clases/Menu.php';
 
+require_once __DIR__.'/validaciones/ValidacionesCrear.php';
+require_once __DIR__.'/validaciones/ValidacionesListar.php';
+require_once __DIR__.'/validaciones/ValidacionesBorrar.php';
+require_once __DIR__.'/validaciones/ValidationException.php';
+
 $my_Agenda = new Agenda();
 $option = 0;
 
